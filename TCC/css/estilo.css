@@ -1,0 +1,78 @@
+@charset "UFT-8";
+@font-face{
+font-family:'FonteLogo';
+src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+/*cabeçalho*/
+ fieldset#corpo{
+width: 1338px;
+height: 90px;
+position:  relative;
+top: -10px;
+left: -10px;
+background: #dddddd;
+}  
+
+header#login h3{
+font-size: 14pt;
+margin-top: 10px;
+margin-left: 930px;
+}
+
+header#login h4{
+font-size: 14pt;
+margin-top: -40px;
+margin-left: 1110px;
+}
+
+header#login p {
+font-size: 14pt;
+color: #black;
+margin-top: -20px;
+margin-left: 930px;
+}
+
+header#login img#icone{
+position: absolute;
+width: 18%;
+height: 125%;
+margin-top: -20px;
+margin-left: -20px;
+}
+
+/*corpo*/
+ fieldset#cadastro{
+width: 300px;
+margin: 50px;
+font-size: 13pt;
+font-weight: bold;
+position:  relative;
+left: 800px;
+background: #dddddd;
+}
+
+header#imagem1 img#imagem1{
+position: absolute;
+width: 35%;
+height: 50%;
+margin-top: 90px;
+margin-left: 150px;
+}
+
+header#imagem1 p {
+font-size: 17pt;
+color: #black;
+position: absolute;
+top: 145px;
+left: 85px;
+}
+
+/*rodape*/
+footer#rodape {
+border-top: 1px solid #000000;
+}
+
+footer#rodape p{
+text-align: center;
+background-color:white;
+}
