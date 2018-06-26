@@ -9,9 +9,9 @@ $result_user = "SELECT * FROM arquivos WHERE nome LIKE '%$arquivos%' LIMIT 10";
 $resultado_user = mysqli_query($conn, $result_user);
 
 if(($resultado_user) AND ($resultado_user->num_rows != 0 )){
-	while($row_user = mysqli_fetch_assoc($resultado_user)){
-		echo "<li>".$row_user['nome']."</li>";
-	}
+    while($row_user = mysqli_fetch_assoc($resultado_user)){
+        echo "<li>".$row_user['nome']."</li>";
+    }
 }else{
-	echo "Nenhum usuário encontrado ...";
+    echo "Nenhum usuário encontrado ...";
 }

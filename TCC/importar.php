@@ -1,26 +1,26 @@
 
 <?php
-		$conn = new mysqli("localhost", "root", "","documentos");
-		mysqli_set_charset($conn,"utf8");
+$conn = new mysqli("localhost", "root", "","documentos");
+mysqli_set_charset($conn,"utf8");
 
-		$arquivo 	= $_FILES["file"]["tmp_name"];
-        $nome 		= $_FILES["file"]["name"];
-        $tamanho 	= $_FILES["file"]["size"];
-
-
-        $fp = fopen($arquivo,"rb");//Abro o arquivo que está no $temp   
-    	$documento = fread($fp, $tamanho);//Leio o binario do arquivo
-    	fclose($fp);//fecho o arquivo
-
-		$dados = bin2hex($documento);
-
-		$caminho = "ARQUIVOS/".$nome;
-
-        move_uploaded_file($arquivo, $caminho);
+$arquivo 	= $_FILES["file"]["tmp_name"];
+$nome 		= $_FILES["file"]["name"];
+$tamanho 	= $_FILES["file"]["size"];
 
 
-		$sql = "INSERT INTO arquivos (nome, tamanho, conteudo, data) VALUES ('$nome','$tamanho','$dados',now())";
+$fp = fopen($arquivo,"rb");//Abro o arquivo que está no $temp
+$documento = fread($fp, $tamanho);//Leio o binario do arquivo
+fclose($fp);//fecho o arquivo
 
-     	$result = $conn->query($sql)or die(mysqli_errno());
+$dados = bin2hex($documento);
+
+$caminho = "ARQUIVOS/".$nome;
+
+move_uploaded_file($arquivo, $caminho);
+
+
+$sql = "INSERT INTO arquivos (nome, tamanho, conteudo, data) VALUES ('$nome','$tamanho','$dados',now())";
+
+$result = $conn->query($sql)or die(mysqli_errno());
 
 ?>
