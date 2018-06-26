@@ -5,13 +5,25 @@ include_once 'con_pdo.php';
 $arquivos = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
 
 //Pesquisar no banco de dados nome do usuario referente a palavra digitada
-$result_user = "SELECT * FROM arquivos WHERE nome LIKE '%$arquivos%' LIMIT 10";
-$resultado_user = mysqli_query($conn, $result_user);
+$sql = "SELECT * FROM arquivos WHERE nome LIKE '%:arquivos%' LIMIT 10";
 
-if(($resultado_user) AND ($resultado_user->num_rows != 0 )){
-    while($row_user = mysqli_fetch_assoc($resultado_user)){
-        echo "<li>".$row_user['nome']."</li>";
+try{
+    $stmt = $conect->prepare($sql);
+
+    $stmt->bindValue(   ':arquivos', $arquivos);
+
+    $stmt->execute();
+
+    if ( $stmt->rowCount() > 0){
+        $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        foreach ($rows as $row){
+            echo "<li>".$row['nome']."</li>";
+        }
+
+    }else{
+        echo "Nenhum usuário encontrado ...";
     }
-}else{
-    echo "Nenhum usuário encontrado ...";
+}catch(Exception $e){
+    echo "Erro: \n Código: " . $e->getCode() . " Mensagem: " . $e->getMessage();
 }
