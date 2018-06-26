@@ -14,11 +14,13 @@
     <fieldset id="corpo">
         <img id="icone" src="imagens/logo1.png"/>
         <h3>Usuário</h3>
-        <h4>Senha</h4
-        <form method="post" id="tela_de_login" action="autenticando.php" name="form2" onsubmit="return validacao_form2(this);">
-            <p><input type="text" name="email" size="19" maxlength="40" placeholder=" E-Mail" /> &nbsp;
-                <input type="password" name="senha" size="15" maxlength="36" placeholder=" ********" /> &nbsp;
-                <input type="submit" name="btn_enviar" value="Entrar"/></p>
+        <h4>Senha</h4>
+        <form method="post" id="tela_de_login" action="autenticando.php" name="form2" >
+            <p>
+                <input type="email" name="email" size="19" maxlength="40" placeholder=" E-Mail" required > &nbsp;
+                <input type="password" name="senha" size="15" maxlength="36" placeholder=" ********" required > &nbsp;
+                <input type="submit" name="btn_enviar" value="Entrar" >
+            </p>
         </form>
     </fieldset>
 </header>
