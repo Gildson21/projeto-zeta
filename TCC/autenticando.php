@@ -1,4 +1,8 @@
-<html>
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <title>Autenticando...</title>
     <script type="text/javascript">
@@ -13,6 +17,7 @@
 <body>
 
 <?php
+
 if(isset($_POST['btn_enviar'])){
     include_once 'con_pdo.php';
     $email = $_POST['email'];
@@ -45,6 +50,7 @@ if(isset($_POST['btn_enviar'])){
 
 }
 ?>
+
 </body>
 </html>	
 

@@ -1,8 +1,13 @@
-Sistema de login (Não sei pq não efetua o login, é como se não tivesse funcionando o botão)
+Sistema de login (Nao sei pq nao efetua o login, Ã© como se nao tivesse funcionando o botï¿½o)
+CORRIGIDO
+ta explicado no commit do arquivo
+
+________________________________
 
 Sistema de pesquisa (Da um erro no codigo quando digita algo para pesquisar)
+
 Incluir o link para fazer o download
 
-Sistema de listar/baixar arquivos (Não estão aparecendo os arquivos do bando para serem listadas - Tá na pasta teste1)
+Sistema de listar/baixar arquivos (Nï¿½o estï¿½o aparecendo os arquivos do bando para serem listadas - Tï¿½ na pasta teste1)
 
-Acho que é só. Valeu mano.
+Acho que ï¿½ sï¿½. Valeu mano.
