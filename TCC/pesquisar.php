@@ -1,3 +1,9 @@
+<?php
+if (!isset($_SESSION)){
+    session_start();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -40,11 +46,6 @@
     </fieldset>
 </header>
 
-<?php
-if (!isset($_SESSION)){
-    session_start();
-}
-?>
 
 <footer id="rodape">
     <p>Copyright © 2018 - by Gildson Oliveira<br/>
