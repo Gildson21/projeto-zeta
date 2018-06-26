@@ -5,9 +5,24 @@ ta explicado no commit do arquivo
 ________________________________
 
 Sistema de pesquisa (Da um erro no codigo quando digita algo para pesquisar)
+CORRIGIDO
+ta explicado
 
-Incluir o link para fazer o download
+_______________________________
+
+
+Incluir o link para fazer o download - N]AO FEITO
+os arquivos estão listado
+tente arrumar os links
+com o nome do arquivo, é só vc preparar o caminho até o arquivo
+
+
+____________________________
 
 Sistema de listar/baixar arquivos (N�o est�o aparecendo os arquivos do bando para serem listadas - T� na pasta teste1)
+
+CORRIGIDO
+
+__________________________
 
 Acho que � s�. Valeu mano.
