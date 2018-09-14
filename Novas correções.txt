@@ -1,0 +1,6 @@
+Liberar o link para download de arquivos apos a pesquisa
+
+----------------------------------------------------------
+
+No momento de fazer upload a pessoa seleciona o arquivo e aperta OK e ele ja envia
+queria que apos apertar OK tivesse um botão pra pessoa confirmar o envio, ai sim ele ja poderia ser upado
