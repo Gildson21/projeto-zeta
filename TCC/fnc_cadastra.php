@@ -18,6 +18,8 @@ if(isset($_POST['bt_enviar'])){
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
+    // $tipoDeUsuario == usuarioComum;
+
     try{
         $sentenca = $conect->prepare("INSERT INTO cadastro (nome, sexo, data_nascimento, email, senha)
 		VALUES (:nome, :sexo, :data_nascimento, :email, :senha)");
@@ -27,6 +29,10 @@ if(isset($_POST['bt_enviar'])){
         $sentenca->bindparam(':data_nascimento', $data_nascimento, PDO::PARAM_STR);
         $sentenca->bindparam(':email', $email, PDO::PARAM_STR);
         $sentenca->bindparam(':senha', $senha, PDO::PARAM_STR);
+
+
+        // $sentenca->bindparam(':tipoDeUsuario', $tipoDeUsuario, PDO::PARAM_STR);
+
 
         $executar = $sentenca->execute();
         if($executar){

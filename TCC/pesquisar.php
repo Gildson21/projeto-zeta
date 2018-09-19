@@ -2,6 +2,14 @@
 if (!isset($_SESSION)){
     session_start();
 }
+
+// ferificando existe usuario logado na sessão
+//se não existir, vai redirecionar para a index
+if ( !isset($_SESSION['email']) || empty($_SESSION['email']) ){
+    header('Location: index.php');
+}
+
+
 ?>
 
 <!DOCTYPE html>
