@@ -1,6 +1,5 @@
 Verifiar
 
--data de nascimento no cadastro
 -botão para enviar arquivos
 -link para baixar arquivos, inserir icone para baixar e inserir icone para visualização
 -codigo pada download, upload e excluir
