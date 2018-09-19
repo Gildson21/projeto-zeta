@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
-    <title>MUDAR NOME DO SISTEMA</title>
+    <title>RI Castanhal</title>
     <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
     <link rel="stylesheet" href="css/form.css"/>
     <script language="javascript" src="JS/validacao_form1.js"></script>
@@ -13,7 +13,9 @@
 <header id="login">
     <fieldset id="corpo">
         <img id="icone" src="imagens/logo1.png"/>
-        <h3>Usuário</h3>
+        <h1>RI Castanhal</h1>
+		<h2>Compartilhando o conhecimento</h2>
+		<h3>Usuário</h3>
         <h4>Senha</h4>
         <form method="post" id="tela_de_login" action="autenticando.php" name="form2" >
             <p>
@@ -41,7 +43,7 @@
                     <option>Feminino</option>
                     </optgroup>
                 </select> </p>
-            <p>Data de Nascimento: <input type="date" name="data_nascimento"></p>
+            <p>Data de Nascimento: <input type="date" name="data_nascimento" placeholder=" 01/01/1990"></p>
             <p>E-mail: <input type="text" name="email" size="40" placeholder=" E-mail"/></p>
             <p>Senha: <input type="password" name="senha" size="40" placeholder=" ********" /></p>
             <center><input type="submit" name="bt_enviar" value="Cadastrar" /></center>
@@ -57,8 +59,8 @@ if (!isset($_SESSION)){
 
 <footer id="rodape">
     <p>Copyright © 2018 - by Gildson Oliveira<br/>
-        <a href="https://www.facebook.com/"target="_blank">Facebook</a> |
-        <a href="https://twitter.com"target="_blank">Twitter</a>
+        <a href="Contate-nos.php">Contate o Administrador</a> |
+        <a href="#">ADM</a>
     </p>
 </footer>
 </body>

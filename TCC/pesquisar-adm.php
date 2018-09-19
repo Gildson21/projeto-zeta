@@ -31,20 +31,11 @@ if (!isset($_SESSION)){
 </div>
 
 
-<header id="pesquisar">
-    <fieldset id="pesq">
 
-        <center><h1>Pesquisar</h1></center>
-        <form method="POST" id="form-pesquisa" action="">
-            <label>Pesquisar: </label>
-            <input type="text" name="pesquisa" size="60" id="pesquisa" placeholder="Pesquise aqui!">
-        </form>
-        <ul class="resultado">
-        </ul>
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-        <script type="text/javascript" src="JS/personalizado.js"></script>
-    </fieldset>
-</header>
+
+
+
+
 
 
 <footer id="rodape">

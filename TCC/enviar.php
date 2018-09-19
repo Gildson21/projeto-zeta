@@ -1,25 +1,62 @@
+<?php
+if (!isset($_SESSION)){
+    session_start();
+}
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <title>Compartilhar</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/uploadfilemulti.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>RI Castanhal</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <link rel="stylesheet" href="css/form.css"/>
+	
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/uploadfilemulti.css" rel="stylesheet">
+	
+	
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<div class="container">
-    <div class="jumbotron">
-        <h2>Enviar</h2>
-        <button type="button" id="mulitplefileuploader">Importar arquivo(s)</button>
-    </div>
+<header id="login">
+    <fieldset id="corpo">
+        <img id="icone" src="imagens/logo1.png"/>
+		 <h1>RI Castanhal</h1>
+		<h2>Compartilhando o conhecimento</h2>
+    </fieldset>
+</header>
+
+<div class="menu">
+    <ul type="disc">
+        <li><a href="Pesquisar.php">Pesquisar</a></li>
+        <li><a href="enviar.php">Compartilhar</a></li>
+        <li><a href="deslogar.php">Sair</a></li>
+    </ul>
 </div>
 
+
+
+<fieldset id="upar">
+<div class="container">
+    <div class="jumbotron">
+       <center> <h2>Compartilhar arquivos</h2> </center>
+        <center><button type="button" id="mulitplefileuploader">Importar arquivo(s)</button></center>
+    </div>
+</div>
+</fieldset>
+
+
+
+
+<footer id="rodape">
+     <p>Copyright © 2018 - by Gildson Oliveira<br/>
+        <a href="Contate-nos.php">Contate o Administrador</a>
+    </p>
+</footer>
 </body>
-</html>
 </html>
 <script src="JS/jquery.fileuploadmulti.min.js"></script>
 <script type="text/javascript">

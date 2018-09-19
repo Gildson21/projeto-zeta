@@ -7,15 +7,29 @@ src: url("../_fonts/bubblegum-sans-regular.otf");
  fieldset#corpo{
 width: 1338px;
 height: 90px;
-position:  relative;
+position: relative;
 top: -10px;
 left: -10px;
 background: #dddddd;
 }  
 
+header#login h1{
+font-size: 36pt;
+margin-top: 10px;
+margin-left: 145px;
+color: #111160;
+}
+
+header#login h2{
+font-size: 18pt;
+margin-top: -40px;
+margin-left: 145px;
+color: #111160;
+}
+
 header#login h3{
 font-size: 14pt;
-margin-top: 10px;
+margin-top: -90px;
 margin-left: 930px;
 }
 
@@ -34,10 +48,10 @@ margin-left: 930px;
 
 header#login img#icone{
 position: absolute;
-width: 18%;
+width: 16%;
 height: 125%;
 margin-top: -20px;
-margin-left: -20px;
+margin-left: -40px;
 }
 
 /*corpo*/
@@ -50,6 +64,17 @@ position:  relative;
 left: 800px;
 background: #dddddd;
 }
+
+ fieldset#pesq{
+width: 500px;
+margin: 50px;
+font-size: 13pt;
+font-weight: bold;
+position:  relative;
+left: 355px;
+background: #dddddd;
+}
+
 
 header#imagem1 img#imagem1{
 position: absolute;
@@ -67,6 +92,27 @@ top: 145px;
 left: 85px;
 }
 
+ fieldset#upar{
+width: 650px;
+margin: 100px;
+font-size: 13pt;
+font-weight: bold;
+position:  relative;
+top: -50px;
+left: 285px;
+background: #dddddd;
+}
+
+fieldset#mensagem {
+font-weight: bold;
+width: 350px;
+position:  relative;
+top: -20px;
+left: 510px;
+font-size: 14pt;
+background: #dddddd;
+}
+
 /*rodape*/
 footer#rodape {
 border-top: 1px solid #000000;
@@ -75,4 +121,74 @@ border-top: 1px solid #000000;
 footer#rodape p{
 text-align: center;
 background-color:white;
+}
+
+  /*Formatação do Menu*/
+  
+ .menu{
+display:block 
+} 
+
+.menu ul{
+list-style: none;
+text-transform: uppercase;
+position: relative;
+top: -100px;
+left: 930px;
+}
+
+.menu li{
+display: inline-block;
+background-color: #dddddd;
+padding: 10px;
+margin: 2px;
+box-shadow: 0px 0px 10px rgba(0,0,0,1);
+}
+
+.menu li:hover {
+background-color: #98A2AB;
+}
+
+.menu a{
+color: #000000; 
+text-decoration: none;	
+}
+
+.menu a:hover{
+	color: #ffffff;
+}
+
+
+
+ .menu1{
+display:block 
+} 
+
+.menu1 ul{
+list-style: none;
+text-transform: uppercase;
+position: relative;
+top: -100px;
+left: 1200px;
+}
+
+.menu1 li{
+display: inline-block;
+background-color: #dddddd;
+padding: 10px;
+margin: 2px;
+box-shadow: 0px 0px 10px rgba(0,0,0,1);
+}
+
+.menu1 li:hover {
+background-color: #98A2AB;
+}
+
+.menu1 a{
+color: #000000; 
+text-decoration: none;	
+}
+
+.menu1 a:hover{
+	color: #ffffff;
 }
