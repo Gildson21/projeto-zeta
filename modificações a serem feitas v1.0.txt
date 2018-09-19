@@ -1,6 +1,10 @@
 Verifiar
 
--botão para enviar arquivos
--link para baixar arquivos, inserir icone para baixar e inserir icone para visualização
--codigo pada download, upload e excluir
--codigo para adm
+-botï¿½o para enviar arquivos - nao deu
+
+-link para baixar arquivos, inserir icone para baixar e inserir icone para visualizaï¿½ï¿½o - OK
+
+-codigo para adm - mostrado e explicado
+
+
+-codigo pada download, upload e excluir - parcialmente feito/organizado

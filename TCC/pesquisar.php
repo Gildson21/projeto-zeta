@@ -5,10 +5,11 @@ if (!isset($_SESSION)){
 
 // ferificando existe usuario logado na sessão
 //se não existir, vai redirecionar para a index
+/*
 if ( !isset($_SESSION['email']) || empty($_SESSION['email']) ){
     header('Location: index.php');
 }
-
+*/
 
 ?>
 
@@ -19,6 +20,7 @@ if ( !isset($_SESSION['email']) || empty($_SESSION['email']) ){
     <title>RI Castanhal</title>
     <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
     <link rel="stylesheet" href="css/form.css"/>
+
 </head>
 <body>
 
@@ -40,7 +42,7 @@ if ( !isset($_SESSION['email']) || empty($_SESSION['email']) ){
 
 
 <header id="pesquisar">
-    <fieldset id="pesq">
+    <container class='container' id="pesq">
 
         <center><h1>Pesquisar</h1></center>
         <form method="POST" id="form-pesquisa" action="">
@@ -51,7 +53,7 @@ if ( !isset($_SESSION['email']) || empty($_SESSION['email']) ){
         </ul>
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
         <script type="text/javascript" src="JS/personalizado.js"></script>
-    </fieldset>
+    </container>
 </header>
 
 

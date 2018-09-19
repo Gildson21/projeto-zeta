@@ -15,7 +15,7 @@
   <table class="table table-hover">
     <thead>
       <tr>
-        <th>Código</th>
+
         <th>Nome</th>
         <th>Tamanho</th>
         <th>Data de importação</th>

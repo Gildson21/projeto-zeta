@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>Enviando...</title>
+</head>
 <script type="text/javascript">
 function enviado(){
 	setTimeout("window.location='Index.php'",3000);
