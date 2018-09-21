@@ -3,7 +3,7 @@
     <title>Cadastrando...</title>
     <script type="text/javascript">
         function cadastrando(){
-            setTimeout("window.location='pesquisar.php'",1500);
+            setTimeout("window.location='adicionar.php'",1500);
         }
     </script>
 </head>
@@ -21,7 +21,7 @@ if(isset($_POST['bt_enviar'])){
     // $tipoDeUsuario == usuarioComum;
 
     try{
-        $sentenca = $conect->prepare("INSERT INTO cadastro (nome, sexo, data_nascimento, email, senha)
+        $sentenca = $conect->prepare("INSERT INTO cadastro_adm (nome, sexo, data_nascimento, email, senha)
 		VALUES (:nome, :sexo, :data_nascimento, :email, :senha)");
 
         $sentenca->bindparam(':nome', $nome, PDO::PARAM_STR);

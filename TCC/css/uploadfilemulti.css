@@ -51,7 +51,7 @@ top: 3px;
 
 }
 .upload-red {
-background: url(../img/loading.gif);
+background: url(../imagens/loading.gif);
 background-repeat: no-repeat;
 background-size: 25px;
 margin-top:-1px;
@@ -66,7 +66,7 @@ vertical-align: top;
 
 }
 .upload-green {
-background: url(../img/ok.png);
+background: url(../imagens/ok.png);
 background-repeat: no-repeat;
 background-size: 18px;
 height: 18px;
