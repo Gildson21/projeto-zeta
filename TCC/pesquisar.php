@@ -26,7 +26,7 @@ if ( !isset($_SESSION['email']) || empty($_SESSION['email']) ){
 
 <header id="login">
     <fieldset id="corpo">
-        <img id="icone" src="imagens/logo1.png"/>
+    <a href="index.php"> <img id="icone" src="imagens/logo1.png"/></a>
 		 <h1>RI Castanhal</h1>
 		<h2>Compartilhando o conhecimento</h2>
     </fieldset>

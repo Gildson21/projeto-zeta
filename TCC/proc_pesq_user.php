@@ -37,7 +37,7 @@ try{
     <thead>
       <tr>
 
-        <th>Nome</th>
+        <th>Nome do arquivo</th>
         <th>Tamanho</th>
         <th>Data de importação</th>
         <th>Ações</th>
@@ -69,7 +69,7 @@ try{
   </div>';
 
     }else{
-        echo "Nenhum usuário encontrado ...";
+        echo "Nenhum arquivo com esse nome encontrado...";
     }
 }catch(Exception $e){
     echo "Erro: \n Código: " . $e->getCode() . " Mensagem: " . $e->getMessage();
