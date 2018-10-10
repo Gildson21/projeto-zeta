@@ -18,7 +18,6 @@ if ( $_SESSION['tipoDeUsuario'] != "adm"  ){
 */
 
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -61,7 +60,7 @@ if ( $_SESSION['tipoDeUsuario'] != "adm"  ){
         <ul class="resultado">   
         </ul>
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-        <script type="text/javascript" src="JS/personalizado.js"></script>
+        <script type="text/javascript" src="JS/personalizado2.js"></script>
     </fieldset>
 </header>
 

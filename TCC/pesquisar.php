@@ -12,9 +12,8 @@ if ( !isset($_SESSION['email']) || empty($_SESSION['email']) ){
 */
 
 ?>
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>RI Castanhal</title>
