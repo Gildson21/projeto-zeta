@@ -14,3 +14,21 @@ $(function(){
 		}
 	});
 });
+
+function excluir_arquivo(id_arquivo){
+    $.ajax({
+        url:"excluir.php",
+        type:"post",
+        data:"metodo=EXCLUIR_ARQUIVO&id_arquivo="+id_arquivo,
+        beforeSend:function(){
+
+        },
+        success: function(){
+
+
+                alert("arquivo deletado");
+                location.reload();
+
+        }
+    })
+}
