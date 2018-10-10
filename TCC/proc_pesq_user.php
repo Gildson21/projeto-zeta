@@ -54,11 +54,11 @@ try{
 						<td>".$row['tamanho']."</td>
 						<td>".$row['data']."</td>
 						<td>
-							<a href='visualizar_arquivo.php?acao=VISUALIZAR&id_arquivo=".$row['id_arquivo']."' target='_blank'><img src='imagens/pdf.png' style='width:30px; height:30px;cursor:pointer;'></a>
-							<a href='visualizar_arquivo.php?acao=DOWNLOAD&id_arquivo=".$row['id_arquivo']."' target='_blank'><img src='imagens/download.png' style='width:30px; height:30px;cursor:pointer;'></a>";
+							<a href='visualizar_arquivo.php?acao=VISUALIZAR&id_arquivo=".$row['id_arquivo']."' target='_blank'><img title='VISUALIZAR ARQUIVO' src='imagens/pdf.png' style='width:30px; height:30px;cursor:pointer;'></a>
+							<a href='visualizar_arquivo.php?acao=DOWNLOAD&id_arquivo=".$row['id_arquivo']."' target='_blank'><img title='BAIXAR ARQUIVO' src='imagens/download.png' style='width:30px; height:30px;cursor:pointer;'></a>";
 /*
             if ( $_SESSION['tipoDeUsuario'] == "adm" || true ){
-                echo "<a href='#' onclick='excluir_arquivo(".$row['id_arquivo'].");'><img src='imagens/delete.png' style='width:30px; height:30px;cursor:pointer;'></a>";
+                echo "<a href='#' onclick='excluir_arquivo(".$row['id_arquivo'].");'><img title='EXCLUIR' src='imagens/delete.png' style='width:30px; height:30px;cursor:pointer;'></a>";
             }
 */
             echo "</td></tr>";
